@@ -1,0 +1,27 @@
+#mpc
+    button.prev &lt;&lt;
+    button.play &gt;
+    button.pause II
+    button.next &gt;&gt;
+    span.title n/a
+    
+    styles
+        :stylus
+            #mpc
+                position absolute
+                left 20px
+                bottom 20px
+                color yellow
+
+                button
+                    cursor pointer
+                    background-color black
+                    opacity .2
+                    padding 4px 10px
+
+                    &:hover
+                        opacity .9
+                        background-color blue
+    script
+       include build/bundle.js
+ 
