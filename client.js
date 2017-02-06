@@ -1,3 +1,7 @@
+
+console.log('**** HELLO FROM YOUR FRIENDLY MPC!');
+
+var shoe = require('shoe');
 var split = require('split');
 let mpc = shoe('/mpc');
 setInterval( ()=> {

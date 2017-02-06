@@ -1,9 +1,9 @@
 bin := node_modules/.bin
 
-build/mpc.htmshell: build/mpc.gz
+build/mpc: build/mpc.gz
 	printf 'cat \0440 | tail -n+2; exit 0\n' > $@
-	printf '\033_content-type:text/html\ncontent-encoding:gzip\ncontent-transfer-encoding:base64\n\n' >> $@
-	cat $< | base64 --wrap=0 >> $@
+	printf '\033_HTMSHELL/1.0\ncontent-type:text/html;content-encoding:gzip;content-transfer-encoding:base64;;' >> $@
+	cat $< | base64 >> $@
 	printf '\033\\' >> $@
 	chmod +x $@
 
