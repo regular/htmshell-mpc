@@ -23,5 +23,13 @@
     "browserify": "^14.0.0",
     "jstransformer-stylus": "^1.3.0",
     "pug-cli": "^1.0.0-alpha6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/regular/htmshell-mpc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/regular/htmshell-mpc/issues"
+  },
+  "homepage": "https://github.com/regular/htmshell-mpc#readme"
 }
